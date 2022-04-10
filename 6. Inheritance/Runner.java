@@ -25,6 +25,7 @@ public class Runner{
 */
 
 //3. Runner For Book and Tape classes
+/*
 public class Runner{
     public static void main(String[] args) {
 
@@ -46,5 +47,17 @@ public class Runner{
         myTape.setTitle("Java For Beginners");
         myTape.display();
 
+    }
+}
+*/
+
+//4. Runner for Verified Simple class
+public class Runner{
+    public static void main(String[] args) {
+        VerifiedSimple vs = new VerifiedSimple();
+        vs.add();
+        vs.sub();
+        vs.mul();
+        vs.div();
     }
 }
