@@ -65,12 +65,34 @@ public class Runner{
 */
 
 //5. Runner for Truck and Vehicle class
+/*
 public class Runner{
     public static void main(String[] args) {
 
         Person p1 = new Person();
         Truck myTruck = new Truck("Honda", 25, p1, 4000, 3578.9);
         myTruck.display();
+
+    }
+}
+*/
+//6. Runner for Faculty and Staff class
+public class Runner{
+    public static void main(String[] args) {
+        Date todayDate = new Date();
+        Faculty myFaculty = new Faculty("Street-5 Hostel City Islamabad", "Daoud", "03483016704", "daoudhussain302@gmail.com",25000.5, 1, todayDate, 9,5);
+        System.out.println("FACULTY DATA");
+        System.out.println("---------------------------------------------------");
+        myFaculty.display();
+
+
+        System.out.println();
+        System.out.println("STAFF DATA");
+        System.out.println("---------------------------------------------------");
+
+        Staff myStaff = new Staff("Park-Road Tarlai Kalan Islamabad", "Rizwan", "03442234426", "rizwan@comsats.edu.pk",175000.5, 1, todayDate,"Teacher");
+        myStaff.display();
+        System.out.println("---------------------------------------------------");
 
     }
 }
