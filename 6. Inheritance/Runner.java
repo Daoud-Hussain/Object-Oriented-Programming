@@ -52,6 +52,7 @@ public class Runner{
 */
 
 //4. Runner for Verified Simple class
+/*
 public class Runner{
     public static void main(String[] args) {
         VerifiedSimple vs = new VerifiedSimple();
@@ -59,5 +60,17 @@ public class Runner{
         vs.sub();
         vs.mul();
         vs.div();
+    }
+}
+*/
+
+//5. Runner for Truck and Vehicle class
+public class Runner{
+    public static void main(String[] args) {
+
+        Person p1 = new Person();
+        Truck myTruck = new Truck("Honda", 25, p1, 4000, 3578.9);
+        myTruck.display();
+
     }
 }
