@@ -4,7 +4,7 @@ public abstract class Employee {
 	protected String ssn;
 
 
-	//Constructors
+	//Argument-Constructors
 	public Employee(String fn, String ln, String secSecNum)
 	{
 		if(fn != "" && ln != "" && secSecNum != ""){
