@@ -19,7 +19,7 @@ public class WeeklyEmployee extends Employee{
 
 	//Method to display values
 	public String toString(){
-		String text = "First Name: " + firstName + " Last Name: " + lastName + " Social Security Number: " + ssn + " Weekly Salary: " + WeeklySalary;
+		String text = "First Name: " + firstName + " Last Name: " + lastName + " SSN: " + ssn + " Weekly Salary: " + WeeklySalary;
 		return text;
 	}
 

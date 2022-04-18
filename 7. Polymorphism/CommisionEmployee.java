@@ -21,7 +21,7 @@ public class CommisionEmployee extends Employee {
 
 	//Method to display values
 	public String toString(){
-		String text = "First Name: " + firstName + " Last Name: " + lastName + " Social Security Number: " + ssn + " Gross Sales: " + grossSales + " Commision Rate" + commisionRate;
+		String text = "First Name: " + firstName + " Last Name: " + lastName + " SSN: " + ssn + " Gross Sales: " + grossSales + " Commision Rate: " + commisionRate;
 		return text;
 	}
 }

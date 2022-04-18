@@ -26,7 +26,7 @@ public class HourlyEmployee extends Employee {
 
 	//Method to display values
 	public String toString(){
-		String text = "First Name: " + firstName + " Last Name: " + lastName + " Social Security Number: " + ssn + " Hourly Wages: " + hourlyWages + " Hours Worked" + hoursWorked;
+		String text = "First Name: " + firstName + " Last Name: " + lastName + " SSN: " + ssn + " Hourly Wages: " + hourlyWages + " Hours Worked: " + hoursWorked;
 		return text;
 	}
 

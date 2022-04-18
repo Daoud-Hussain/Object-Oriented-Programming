@@ -19,7 +19,7 @@ public class BasePlusCommisionEmployee extends CommisionEmployee {
 
 	//Method to display values
 	public String toString(){
-		String text = "First Name: " + firstName + " Last Name: " + lastName + " Social Security Number: " + ssn + " Gross Sales: " + grossSales + " Commision Rate" + commisionRate + " Base Salary" + baseSalary;
+		String text = "First Name: " + firstName + " Last Name: " + lastName + " SSN: " + ssn + " Gross Sales: " + grossSales + " Commision Rate: " + commisionRate + " Base Salary: " + baseSalary;
 		return text;
 	}
 }
