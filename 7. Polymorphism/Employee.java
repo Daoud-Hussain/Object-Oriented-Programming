@@ -16,4 +16,11 @@ public abstract class Employee {
 
 	//Abstract class method
 	public abstract double earnings();
+
+
+	//Method to display values
+	public String toString(){
+		String text = "First Name: " + firstName + " Last Name: " + lastName + " Social Security Number: " + ssn;
+		return text;
+	}
 }

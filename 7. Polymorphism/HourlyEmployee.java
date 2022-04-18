@@ -11,6 +11,7 @@ public class HourlyEmployee extends Employee {
 		
 	}
 
+	//Overriding Abstract class method earnings()
 	public double earnings(){
 		if(hoursWorked < 40){
 			return hoursWorked * hourlyWages;
@@ -19,6 +20,14 @@ public class HourlyEmployee extends Employee {
 			return 40 * hourlyWages + (hoursWorked - 40) * hourlyWages * 1.5; 
 		}
 
+	}
+
+
+
+	//Method to display values
+	public String toString(){
+		String text = "First Name: " + firstName + " Last Name: " + lastName + " Social Security Number: " + ssn + " Hourly Wages: " + hourlyWages + " Hours Worked" + hoursWorked;
+		return text;
 	}
 
 }
