@@ -16,3 +16,18 @@ public class Runner{
 	}
 }
 */
+
+//3. Runner for movie and subclasses
+public class Runner{
+	public static void main(String[] args) {
+		Movie[] mv = new Movie[2];
+		mv[0] = new Comedy();
+		mv[1] = new Drama();
+
+		for(int i=0; i < mv.length; i++){
+			System.out.println(mv[i].calculateFees());
+
+		}
+
+	}
+}
