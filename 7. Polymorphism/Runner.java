@@ -18,6 +18,7 @@ public class Runner{
 */
 
 //3. Runner for movie and subclasses
+/*
 public class Runner{
 	public static void main(String[] args) {
 		Movie[] mv = new Movie[2];
@@ -28,6 +29,8 @@ public class Runner{
 			System.out.println(mv[i].calculateFees());
 
 		}
+		System.out.print(mv[0].equals(mv[1]));
 
 	}
 }
+*/
