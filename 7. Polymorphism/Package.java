@@ -1,4 +1,6 @@
 public abstract class Package{
+
+	//Data Members
 	protected String name;
 	protected String address;
 	protected double weightPerOunce;
@@ -6,7 +8,7 @@ public abstract class Package{
 
 
 	//Full-Argument Constructor
-	public Package(String n, String add, int wpo, int cpo){
+	public Package(String n, String add, double wpo, double cpo){
 		if(n != "" && add != "" && wpo != 0 && cpo != 0){
 			name = n;
 			address = add;
@@ -15,9 +17,7 @@ public abstract class Package{
 		}
 	}
 
-	public double calculateCost(){
-		return costPerOunce * weightPerOunce;
-	}
+	public abstract double calculateCost();
 
 
 }

@@ -17,6 +17,25 @@ public class Runner{
 }
 */
 
+
+//2. Runner for package and subclasses
+
+public class Runner{
+	public static void main(String[] args) {
+		Package[] p = new Package[2];
+		p[0] = new OverNightPackage("Daoud", "Park-Road Islamabad", 20.4, 9.0, 20000);
+		p[1] = new TwoDayPackage("Hussain", "Hostel-City Islamabad", 20.4, 9.0, 1500);
+
+
+		for(int i = 0; i < p.length; i++){
+			System.out.println(p[i].calculateCost());
+		}
+
+	}
+}
+
+
+
 //3. Runner for movie and subclasses
 /*
 public class Runner{
