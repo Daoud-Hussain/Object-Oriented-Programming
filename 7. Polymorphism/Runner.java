@@ -19,7 +19,7 @@ public class Runner{
 
 
 //2. Runner for package and subclasses
-
+/*
 public class Runner{
 	public static void main(String[] args) {
 		Package[] p = new Package[2];
@@ -33,7 +33,7 @@ public class Runner{
 
 	}
 }
-
+*/
 
 
 //3. Runner for movie and subclasses
