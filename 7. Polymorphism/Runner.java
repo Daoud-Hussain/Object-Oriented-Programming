@@ -53,3 +53,19 @@ public class Runner{
 	}
 }
 */
+
+
+// 5. Runner for Convert and subclasses
+public class Runner{
+	public static void main(String[] args) {
+		Convert[] cvt = new Convert[3];
+		cvt[0] = new FahrenheitToCelcius(10);
+		cvt[1] = new LitersToGallons(10);
+		cvt[2] = new FeetToMeters(10);
+
+		for(int i = 0; i < cvt.length; i++){
+			System.out.println(cvt[i].compute());
+		}
+
+	}
+}
