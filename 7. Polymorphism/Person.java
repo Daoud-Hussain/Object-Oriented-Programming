@@ -4,13 +4,18 @@ public abstract class Person{
 	protected String name;
 
 
-	//One-Argument-Constructor
-	public Person(String n){
-		if(n != ""){
+	//Setter
+	public void setName(String n){
+		if(n!=""){
 			name = n;
 		}
 	}
 
+
+	//Getters
+	public String getName(){
+		return name;
+	}
 
 	public abstract boolean isOutstanding();
 

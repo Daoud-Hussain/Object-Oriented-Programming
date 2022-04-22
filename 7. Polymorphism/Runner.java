@@ -55,6 +55,30 @@ public class Runner{
 */
 
 
+// 4. Runner for Person and subclasses
+///*
+public class Runner{
+	public static void main(String[] args) {
+		Student stu = new Student();
+		stu.setCGPA("Daoud", 3.04);
+
+		Professor pro = new Professor();
+		pro.setNumberOfPublications("Daoud", 100); 
+
+		Person[] per = new Person[2];
+		per[0] = stu;
+		per[1] = pro;
+
+
+		for(int i = 0; i < per.length; i++){
+
+			System.out.println(per[i].isOutstanding());
+		}
+
+	}
+}
+//*/
+
 // 5. Runner for Convert and subclasses
 /*
 public class Runner{

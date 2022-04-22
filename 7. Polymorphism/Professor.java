@@ -3,14 +3,9 @@ public class Professor extends Person{
 
 
 
-	//One-Argument-Constructor
-	public Professor(String n, int np){
-		super(n);
-		numberOfPublications = np;
-	}
-
 	//Setter
-	public void setNumberOfPublications(int n){
+	public void setNumberOfPublications(String nam, int n){
+		super.setName(nam);
 		if(n!=0){
 			numberOfPublications = n;
 		}
