@@ -13,37 +13,46 @@ public class Exam{
 	}
 
 	//Setters
-	public void setS(String nam, String regn, int ag, String psw){
-		s.setregNo(nam, regn);
-		s.setpswd(ag, psw);
+	public void setS(Student stu){
+		this.s = stu;
 	}
 
 	public void setQ(String ido, String qs, String ans){
-		q[6].setId(ido);
-		q[6].setAnswer(ans);
-		q[6].setquesStatement(qs);
+		q[0].setId(ido);
+		q[0].setAnswer(ans);
+		q[0].setquesStatement(qs);
 	}
 
 
 	//Getters
-	public String getS(){
-		return q[0].getid() + "" + q[2].getquesStatement() + " " + q[1].getAnswer(); 
+	public Student getS(){
+		return this.s; 
 	}
 
 
-	public String toString(){
-		String text = getS();
-		return text;
+	public void takeExam(){
+		String ans;
+
+		for(int i = 0; i < q.length; i++){
+			System.out.print(i+1 + ". " + q[i].getquesStatement() + " ");
+			ans = input.next();
+
+			if(ans.equals(q[i].getAnswer())){
+				score += 10;
+			}
+
+		}
+
 	}
 
 
-	public void getExam(){
-		System.out.print("QUESTIONS");
-		System.out.println("10+2=?");
-		q[0] = input.nextLine()
-		System.out.println("10+2=?");
-		System.out.print("10+2=?");
-		
+	public void displayStatus(){
+		if(score >= 50){
+			System.out.println("Student is pass!!");
+		}
+		else{
+			System.out.println("Student is fail!!");
+		}
 	}
 
 }
