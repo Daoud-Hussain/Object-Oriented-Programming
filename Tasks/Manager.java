@@ -18,5 +18,4 @@ public class Manager{
 		return projectPay * noOfProjects;
 	}
 
-
 }

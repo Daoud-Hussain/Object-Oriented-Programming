@@ -48,6 +48,7 @@ public class Runner{
 
 		for(int i = 0; i < myEmployee.length; i++){
 			System.out.println(man.earnings()+ " ");
+			System.out.println(man.toString()+ " ");
 		}
 
 	}
