@@ -1,26 +1,52 @@
 public class Student extends Person{
-	double cgpa;
+	private String regNo; 
+	private String pswd; 
 
 
-	//Setter of name in child class
-	public void setCGPA(String nam, double cgpaStu){
-		super.setName(nam);
-		if(cgpaStu!=0){
-			cgpa = cgpaStu;
+	public Student(){
+		//Default Constructor
+	}
+
+
+	//Argument-Constructor
+	public Student(String nam, int ag, String n, String a){
+		super(nam, ag);
+		if(n!="" && a != ""){
+			regNo = n;
+			pswd = a;
 		}
 	}
+
+	//Setter
+	public void setregNo(String nam, String n){
+		super.setName(nam);
+		if(n!=""){
+			regNo = n;
+		}
+	}
+
+
+	public void setpswd(int ag, String a){
+		super.setAge(ag);
+		if(a != ""){
+			pswd = a;
+		}
+	}
+
 
 	//Getters
-	public double getcgpa(){
-		return cgpa;
+	public String getregNo(){
+		return regNo;
 	}
 
 
-	//Over-riding method in child class 
-	public boolean isOutstanding(){
-		if(cgpa > 3.5){
-			return true;
-		}
-		return false;
-	}	
+	public String getpswd(){
+		return pswd;
+	}
+
+
+	public String toString(){
+		String text = regNo + " " + pswd;
+		return text;
+	}
 }
