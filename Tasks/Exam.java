@@ -27,7 +27,4 @@ public class Exam{
 		return text;
 	}
 
-	public void takeExam(){
-		
-	}
 }
