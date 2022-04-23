@@ -68,6 +68,7 @@ public class Runner{
 		Person[] per = new Person[2];
 		per[0] = stu;
 		per[1] = pro;
+		
 
 
 		for(int i = 0; i < per.length; i++){
