@@ -48,10 +48,10 @@ public class Exam{
 
 	public void displayStatus(){
 		if(score >= 50){
-			System.out.println("Student is pass!!");
+			System.out.println("Congratulations " + s.getName() +  " You're pass!!");
 		}
 		else{
-			System.out.println("Student is fail!!");
+			System.out.println("Try Again " + s.getName() +  " You're Fail!!");
 		}
 	}
 

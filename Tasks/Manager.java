@@ -8,9 +8,7 @@ public class Manager{
 
 	//Argument-Constructor
 	public Manager(Employee[] e_arr, int np, int pp){
-		for(int i = 0; i < e_arr.length; i++){
-			eArray[i] = e_arr[i];
-		}
+		this.eArray = e_arr;
 		noOfProjects = np;
 		projectPay = pp;
 	}

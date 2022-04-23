@@ -18,16 +18,14 @@ public class Student extends Person{
 	}
 
 	//Setter
-	public void setregNo(String nam, String n){
-		super.setName(nam);
+	public void setregNo(String n){
 		if(n!=""){
 			regNo = n;
 		}
 	}
 
 
-	public void setpswd(int ag, String a){
-		super.setAge(ag);
+	public void setpswd(String a){
 		if(a != ""){
 			pswd = a;
 		}

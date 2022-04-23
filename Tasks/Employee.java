@@ -14,7 +14,6 @@ public class Employee{
 		workingHours = wh;
 	}
 
-
 	public double earnings(){
 		return workingHours * wage;
 	}
