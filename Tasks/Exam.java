@@ -3,7 +3,7 @@ public class Exam{
 	private Student s;
 	private double score;
 
-	
+	//Setters
 	public void setS(String nam, String regn, int ag, String psw){
 		s.setregNo(nam, regn);
 		s.setpswd(ag, psw);
@@ -11,12 +11,23 @@ public class Exam{
 
 	public void setQ(String ido, String qs, String ans){
 		q[0].setId(ido);
-		q[0].setAnswer(ans);
-		q[0].setquesStatement(qs);
+		q[1].setAnswer(ans);
+		q[2].setquesStatement(qs);
 	}
 
+
+	//Getters
 	public String getS(){
-		return getRe
+		return q[0].getid() + "" + q[2].getquesStatement() + " " + q[1].getAnswer(); 
 	}
-	
+
+
+	public String toString(){
+		String text = getS();
+		return text;
+	}
+
+	public void takeExam(){
+		
+	}
 }
