@@ -14,7 +14,7 @@ public class Runner{
 */
 
 //2. Runner for Payable interface
-
+/*
 public class Runner{
 	public static void main(String[] args) {
 		Payable[] pb = new Payable[2];
@@ -24,5 +24,16 @@ public class Runner{
 		for(int i = 0; i < pb.length; i++){
 			System.out.println(pb[i].getPaymentAmount());
 		}
+	}
+}
+*/
+
+//3. Runner for Clone Interface
+public class Runner{
+	public static void main(String[] args) {
+		Point origin = new Point(3,4);
+		Point p1 = (Point)origin.clone();
+		System.out.print(p1.getX() + " ");
+		System.out.print(p1.getY());
 	}
 }
