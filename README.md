@@ -84,6 +84,37 @@ Inheritance is an important **pillar** of OOP. It is the mechanism in java by wh
     
     Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
 
+## Is-A Relationship
+In Java, inheritance is an **Is-a relationship**. That is, we use inheritance only if there exists an is-a relationship between two classes.
+**For example**,
+
+- **Car** is a **Vehicle**
+- **Orange** is a **Fruit**
+- **Dog** is an **Animal**.
+
+Here, **Car** can inherit from **Vehicle**, **Orange** can inherit from **Fruit**, and so on...
+
+
+# Polymorphism
+Polymorphism means **many forms**, and it occurs when we have many classes that are related to each other by inheritance. It is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+    Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+
+## Types of polymorphism
+
+In Java polymorphism is mainly divided into two types: 
+
+-  Compile-time Polymorphism
+- Runtime Polymorphism
+ 
+### i. Compile-time polymorphism
+It is also known as **Static polymorphism**. This type of polymorphism is achieved by function overloading or operator overloading. 
+
+**Note**: Java doesn’t support the Operator Overloading.
+
+### ii. Runtime polymorphism
+
+It is also known as **Dynamic Method Dispatch**. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by **Method Overriding**. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
+
 #
 
 ### Author
