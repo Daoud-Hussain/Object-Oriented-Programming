@@ -1,5 +1,5 @@
 //1. Runner for Exam class
-/*
+
 public class Runner{
 	public static void main(String[] args) {
 		int score;
@@ -28,10 +28,10 @@ public class Runner{
 
 
 }
-*/
+
 
 //2. Runner for Employee class
-
+/*
 public class Runner{
 	public static void main(String[] args) {
 		Employee e1 = new Employee("Admin", 30, 9);
@@ -53,3 +53,4 @@ public class Runner{
 
 	}
 }
+*/
