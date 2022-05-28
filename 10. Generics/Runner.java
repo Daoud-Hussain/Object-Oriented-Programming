@@ -17,12 +17,15 @@ public class Runner{
 */
 
 //2. Runner for pair class
-// import java.util.*;
-// public class Runner{
-// 	public static void main(String[] args) {
-// 		Pair<Integer> intPair = new Pair<Int>(10);
-// 	}
-// }
+import java.util.*;
+public class Runner{
+	public static void main(String[] args) {
+		Pair2<Integer, String> multiPair = new Pair2<Integer, String>(10, "20");
+		Pair2<Integer, Double> multiPair2 = new Pair2<Integer, Double>(10, 20.3);
+		System.out.println(multiPair.toString());
+		System.out.println(multiPair2.toString());
+	}
+}
 
 
 
@@ -50,19 +53,19 @@ public class Runner{
 // } 
 
 //4. Runner for drawing class
-import java.util.*;
-public class Runner{
-	public static void main(String[] args) {
-		ArrayList <String> commitee = new ArrayList<String>();
-		commitee.add("Circle");
-		commitee.add("Rectangle");
-		commitee.add("Parallelogram");
-		commitee.add("Triangle");
-		commitee.add("Quadrateral");
+// import java.util.*;
+// public class Runner{
+// 	public static void main(String[] args) {
+// 		ArrayList <String> commitee = new ArrayList<String>();
+// 		commitee.add("Circle");
+// 		commitee.add("Rectangle");
+// 		commitee.add("Parallelogram");
+// 		commitee.add("Triangle");
+// 		commitee.add("Quadrateral");
 
-		System.out.println(commitee.isEmpty());
-	}
-}
+// 		System.out.println(commitee.isEmpty());
+// 	}
+// }
 
 //5. Runner for generic stack class
 /*
