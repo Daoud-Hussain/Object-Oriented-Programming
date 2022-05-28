@@ -1,17 +1,33 @@
+
+//1. Runner for pair class
+/*import java.util.*;
+
+public class Runner{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Pair<String> list = new Pair<String>("Daoud", "Hussain");
+		Pair<Integer> list2 = new Pair<Integer>(10, 20);
+
+		System.out.println(list.toString());
+		System.out.println(list2.toString());
+		
+
+	}
+}
+*/
+
+//1. Runner for pair class
 import java.util.*;
-
-// public class Runner{
-// 	public static void main(String[] args) {
-// 		Scanner input = new Scanner(System.in);
-// 		Pair<String> list = new Pair<String>("Daoud", "Hussain");
-// 		Pair<Integer> list2 = new Pair<Integer>(10, 20);
-
-// 		System.out.println(list.toString());
-// 		System.out.println(list2.toString());
+public class Runner{
+	public static void main(String[] args) {
+		Pair<Integer> intPair = new Pair<Int>(10);
+	}
+}
 
 
-// 	}
-// }
+
+
+//2. Runner for mymathclass 
 
 // public class Runner{
 // 	public static void main(String[] args) {
@@ -33,6 +49,9 @@ import java.util.*;
 // 	}
 // } 
 
+
+//3. Runner for generic stack class
+/*
 import java.util.*;
 public class Runner {
 	public static void main(String[] args){
@@ -54,3 +73,4 @@ public class Runner {
 
 	}
 }
+*/

@@ -1,34 +1,34 @@
-public class Pair<T> {
-	private T first;
-	private T second;
+public class Pair2<T1, T2> {
+	private T1 first;
+	private T2 second;
 
 	//Default Argument Constructor
-	public Pair(){
+	public Pair2(){
 		first = null;
 		second = null;
 	}
 
 	//Argument Constructor
-	public Pair(T firstItem, T secondItem){
+	public Pair2(T1 firstItem, T2 secondItem){
 		first = firstItem;
 		second = secondItem;
 	}
 
 	//Setters
-	public void setFirst(T firstItem){
+	public void setFirst(T1 firstItem){
 		first = firstItem;
 	}
 
-	public void setSecond(T secondItem){
+	public void setSecond(T2 secondItem){
 		second = secondItem;
 	}
 
 	//Getters
-	public T getFirst(){
+	public T1 getFirst(){
 		return first;
 	}
 
-	public T getSecond(){
+	public T2 getSecond(){
 		return second;
 	}
 
@@ -45,12 +45,13 @@ public class Pair<T> {
 		}
 		else{
 			//Typecasting the given object
-			Pair<T> list =(Pair<T>)obj;
+			Pair2<T1, T2> list =(Pair2<T1, T2>)obj;
 			if(list.getFirst().equals(this.first) && list.getSecond().equals(this.second)){
 				return true;
 			}
 			return false;
 		}
 	}
+	
 
 }
