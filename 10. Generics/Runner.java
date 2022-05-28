@@ -16,18 +16,18 @@ public class Runner{
 }
 */
 
-//1. Runner for pair class
-import java.util.*;
-public class Runner{
-	public static void main(String[] args) {
-		Pair<Integer> intPair = new Pair<Int>(10);
-	}
-}
+//2. Runner for pair class
+// import java.util.*;
+// public class Runner{
+// 	public static void main(String[] args) {
+// 		Pair<Integer> intPair = new Pair<Int>(10);
+// 	}
+// }
 
 
 
 
-//2. Runner for mymathclass 
+//3. Runner for mymathclass 
 
 // public class Runner{
 // 	public static void main(String[] args) {
@@ -49,8 +49,22 @@ public class Runner{
 // 	}
 // } 
 
+//4. Runner for drawing class
+import java.util.*;
+public class Runner{
+	public static void main(String[] args) {
+		ArrayList <String> commitee = new ArrayList<String>();
+		commitee.add("Circle");
+		commitee.add("Rectangle");
+		commitee.add("Parallelogram");
+		commitee.add("Triangle");
+		commitee.add("Quadrateral");
 
-//3. Runner for generic stack class
+		System.out.println(commitee.isEmpty());
+	}
+}
+
+//5. Runner for generic stack class
 /*
 import java.util.*;
 public class Runner {

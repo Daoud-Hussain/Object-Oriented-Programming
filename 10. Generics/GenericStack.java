@@ -1,29 +1,15 @@
-// import java.util.*;
-
-// public class Stack <T>{
-// 	private Arraylist<T> array;
-
-
-// 	//Argumented Constructor
-// 	public Stack(Arraylist <T> arr){
-// 		array = arr;
-// 	}
-
-
-
-// }
 import java.util.*;
 
-public class Stack<T>{
+public class GenericStack<T>{
 	private ArrayList<T> array;
 
-	public Stack(){
+	public GenericStack(){
 		//Default Argument Constructor
 	}
 
 
 	//Argument Constructor
-	public Stack(ArrayList<T> arr){
+	public GenericStack(ArrayList<T> arr){
 		array = arr;
 	}
 
@@ -60,6 +46,6 @@ public class Stack<T>{
 	}
 
 	public String toString(){
-		return "Stack: "+ array.toString();
+		return "GenericStack: "+ array.toString();
 	}
 }
