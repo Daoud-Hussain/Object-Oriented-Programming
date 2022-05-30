@@ -1,4 +1,8 @@
-public class Student extends Person{
+import java.util.*;
+import java.io.Serializable;
+
+
+public class Student extends Person implements Serializable{
 	private double gpa; 
 	private int semester; 
 	private String section; 

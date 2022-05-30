@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.Serializable;
 
-public class Department{
+public class Department implements Serializable{
 	private String name;
 	private String location;
 
