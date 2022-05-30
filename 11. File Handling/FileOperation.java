@@ -9,7 +9,7 @@ public class FileOperation {
 	//Write into a file
 	public void write(Student stuObj){
 		try{
-			File fileObj = new File("myFile.ser");
+			File fileObj = new File("myFile.txt");
 			if(fileObj.exists()){
 				MyObjectOutputStream out = new MyObjectOutputStream(new FileOutputStream(fileObj, true));
 				out.writeObject(stuObj);
