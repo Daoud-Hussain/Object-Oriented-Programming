@@ -3,8 +3,8 @@ import java.io.Serializable;
 
 
 public class Student extends Person implements Serializable{
-	private double gpa; 
-	private int semester; 
+	private String gpa; 
+	private String semester; 
 	private String section; 
 	private Department typeDepartment;
 
@@ -13,7 +13,7 @@ public class Student extends Person implements Serializable{
 		Department myDept = new Department();
 	}
 
-	public Student(String name, String phone, String gender, double gpa, int semester, String section, Department myDept){
+	public Student(String name, String phone, String gender, String gpa, String semester, String section, Department myDept){
 		super(name, phone, gender);
 		this.gpa = gpa;
 		this.semester = semester;
@@ -22,13 +22,13 @@ public class Student extends Person implements Serializable{
 	}
 
 	//Setters
-	public void setGPA(double gpa){
-		if(gpa != 0)
+	public void setGPA(String gpa){
+		if(gpa != "")
 			this.gpa = gpa;
 	}
 
-	public void setSemester(int semester){
-		if(semester != 0)
+	public void setSemester(String semester){
+		if(semester != "")
 			this.semester = semester;
 	}
 
@@ -44,7 +44,7 @@ public class Student extends Person implements Serializable{
 
 
 	//Getters
-	public double getGPA(){
+	public String getGPA(){
 		return this.gpa;
 	}
 
@@ -52,13 +52,19 @@ public class Student extends Person implements Serializable{
 		return this.section;
 	}
 
-	public int getSemester(){
+	public String getSemester(){
 		return this.semester;
 	}
 
 	public Department getTypeDepartment(){
-		return this.typeDepartment;
+		return this.typeDepartment ;
 	}
 
+	//Method to display values
+	public String toString(){
+
+		String text = super.toString()+ "\nGPA: "  + gpa + "\nSemester: " + semester + "\nDepartment Name: " + typeDepartment.getName() + "\nLocation: " + typeDepartment.getLocation();
+		return text;
+	}
 
 }

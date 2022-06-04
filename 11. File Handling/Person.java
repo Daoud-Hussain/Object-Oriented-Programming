@@ -47,4 +47,10 @@ public class Person implements Serializable{
 	public String getPhone(){
 		return this.phone;
 	}
+
+	//Method to display values
+	public String toString(){
+		String text = "Name: " + name + "\nGender: " + gender + "\nPhone: " + phone ;
+		return text;
+	}
 }
