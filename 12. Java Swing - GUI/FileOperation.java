@@ -62,7 +62,10 @@ public class FileOperation{
         }catch(EOFException e){
             obj.close();
             System.out.println("Sorry! the targetted file has ended\n");
-        }catch(IOException e){
+        }catch(ArithmeticException  e){
+            System.out.println("Couldn't perform operation due to some error");
+        }
+        catch(IOException e){
             System.out.println("Couldn't perform operation due to some error");
         }
         return str;
