@@ -13,5 +13,9 @@ public class MyFrame extends JFrame{
 
 		ImageIcon image = new ImageIcon("logo.png");
 		this.setIconImage(image.getImage());
+
+
+        
+
     }
 }
