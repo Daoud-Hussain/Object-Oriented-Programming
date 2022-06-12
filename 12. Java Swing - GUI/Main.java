@@ -28,8 +28,10 @@ public class Main{
 			button3.addActionListener(e -> new SearchByDepartment());
 			button3.setFocusable(false);
 			JButton button4 = new JButton("Update the GPA of Student by Name");
+			button4.addActionListener(e -> new UpdateByName());
 			button4.setFocusable(false);
 			JButton button5 = new JButton("Delete a Student by Name");
+			button5.addActionListener(e -> new DeleteByName());
 			button5.setFocusable(false);
 			frame.add(button1);
 			frame.add(button2);

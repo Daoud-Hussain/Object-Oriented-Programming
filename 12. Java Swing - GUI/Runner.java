@@ -13,7 +13,7 @@ public class Runner {
 		// myFile.writeAFile(student1);
 		// myFile.writeAFile(student2);
 		// myFile.readAFile();
-		 System.out.println(myFile.SearchAStudentByName("Daoud"));
+		 // System.out.println(myFile.SearchAStudentByName("Daoud"));
 		// System.out.println(myFile.updateGpaByName( "Daoud", "3.48"));
 		// System.out.println(myFile.removeByName( "Daoud"));
 
