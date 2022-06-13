@@ -14,11 +14,11 @@ public class Runner {
 		// myFile.writeAFile(student2);
 		// myFile.readAFile();
 		 // System.out.println(myFile.SearchAStudentByName("Daoud"));
-		// System.out.println(myFile.updateGpaByName( "Daoud", "3.48"));
-		// System.out.println(myFile.removeByName( "Daoud"));
+		// myFile.updateGpaByName( "Daoud", "3.48");
+		myFile.removeByName( "Daoud");
 
 		//After all the operations
-		myFile.readAFile();
+		// myFile.readAFile();
 		
 	}
 }

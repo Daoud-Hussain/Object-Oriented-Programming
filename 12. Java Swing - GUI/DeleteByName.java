@@ -15,13 +15,13 @@ import java.util.ArrayList;
 
 public class DeleteByName{
 
-	DeleteByName() throws IOException{
+	DeleteByName() {
 		String name = JOptionPane.showInputDialog("Enter the name you want to update:");
 
 		FileOperation f= new FileOperation();
 		f.removeByName(name);
 
-		JOptionPane.showMessageDialog(null, "Updated GPA Successfully!!", "Update", JOptionPane.INFORMATION_MESSAGE );
+		JOptionPane.showMessageDialog(null, "Record deleted Successfully!!", "Update", JOptionPane.INFORMATION_MESSAGE );
 
 	}
 }

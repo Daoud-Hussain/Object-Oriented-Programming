@@ -47,124 +47,140 @@ public class FileOperation{
         }
     }
 
-    public String SearchAStudentByName(String name) throws IOException{
+    public String SearchAStudentByName(String name){
         String str = "";
-        ObjectInputStream obj = new ObjectInputStream(new FileInputStream("Student.ser"));
-        try {
-            while(true){
-                Student s = (Student) obj.readObject();
-                if(s.getName().equals(name)){
-                    str  += "\n"+s.toString();
+        try{
+
+            ObjectInputStream obj = new ObjectInputStream(new FileInputStream("Student.ser"));
+            try {
+                while(true){
+                    Student s = (Student) obj.readObject();
+                    if(s.getName().equals(name)){
+                        str  += "\n"+s.toString();
+                    }
                 }
+            }catch (ClassNotFoundException e) {
+                System.out.println("Sorry! the targetted class is not Found\n");
+            }catch(EOFException e){
+                obj.close();
+                System.out.println("Sorry! the targetted file has ended\n");
+            }catch(ArithmeticException  e){
+                System.out.println("Couldn't perform operation due to some error");
             }
-        }catch (ClassNotFoundException e) {
-            System.out.println("Sorry! the targetted class is not Found\n");
-        }catch(EOFException e){
-            obj.close();
-            System.out.println("Sorry! the targetted file has ended\n");
-        }catch(ArithmeticException  e){
-            System.out.println("Couldn't perform operation due to some error");
-        }
-        catch(IOException e){
-            System.out.println("Couldn't perform operation due to some error");
+            catch(IOException e){
+                System.out.println("Couldn't perform operation due to some error");
+            }
+        }catch(IOException e){
+            System.out.println("Error cautght");
         }
         return str;
     }
 
-    public String updateGpaByName(String name, String gpa) throws IOException{
-        ArrayList<Student> list = new ArrayList<Student>();
-        boolean flag = false;
-        ObjectInputStream obj = new ObjectInputStream(new FileInputStream("Student.ser"));
-        try {
-            while(true){
-                Student s = (Student) obj.readObject();
-                if(s.getName().equals(name)){
-                    s.setGPA(gpa);
-                    flag = true;
+    public void updateGpaByName(String name, String gpa) {
+        try{
+            ArrayList<Student> list = new ArrayList<Student>();
+            boolean flag = false;
+            ObjectInputStream obj = new ObjectInputStream(new FileInputStream("Student.ser"));
+            try {
+                while(true){
+                    Student s = (Student) obj.readObject();
+                    if(s.getName().equals(name)){
+                        s.setGPA(gpa);
+                        flag = true;
+                    }
+                    list.add(s);
                 }
-                list.add(s);
             }
-        }
-        catch(FileNotFoundException e){
-            System.out.println("Sorry! the targetted file is not found\n");
-        }
-        catch(IOException e){
-            System.out.println("Couldn't perform the task due to some error\n");
-        }
-        catch(ClassNotFoundException e){
-            System.out.println("Sorry! the targetted class is not found\n");
-        }
-        
-        try {
-            File f = new File("Student.ser");
-            f.delete();
-            for(int i = 0; i<list.size(); i++){
-                writeAFile(list.remove(i));
+            catch(FileNotFoundException e){
+                System.out.println("Sorry! the targetted file is not found\n");
             }
-        }
-        catch (Exception e) {
-            System.out.println("Some error occured");
-        }
-
-        if(flag){
-        	return ("Updated the file successfully!");
-        	
-        }
-        else{
-        	return ("Couldn't Update the file successfully!");
-        }
-    }
-
-    public String removeByName(String name) throws IOException{
-
-        ArrayList<Student> list = new ArrayList<Student>();
-        boolean flag = false;
-        ObjectInputStream obj = new ObjectInputStream(new FileInputStream("Student.ser"));
-        try {
-            while(true){
-                Student s = (Student) obj.readObject();
-                list.add(s);
+            catch(IOException e){
+                System.out.println("Input Output Exception\n");
             }
-        }
-        catch(SecurityException e){
-            System.out.println("Security");
-        }
-        catch(FileNotFoundException e){
-            System.out.println("File not found");
-        }
-        catch(EOFException e){
-            obj.close();
-            System.out.println("End of file");
-        }
-        catch(IOException e){
-            System.out.println("Io exception");
-        }
-        catch (Exception e) {
-            System.out.println("Some error occured");
-        }
-
-        try {
-            File f = new File("Student.ser");
-            f.delete();
-            for(int i = 0; i<list.size(); i++){
-                if(name.equals(list.get(i).getName())){
-                    list.remove(i);
-                    System.out.println("iNside loop if");
-                }else{
+            catch(ClassNotFoundException e){
+                System.out.println("Sorry! the targetted class is not found\n");
+            }
+            
+            try {
+                File f = new File("Student.ser");
+                f.delete();
+                for(int i = 0; i<list.size(); i++){
                     writeAFile(list.remove(i));
                 }
             }
-        }catch(SecurityException e){
-            System.out.println("Security");
-        }catch (Exception e) {
-            System.out.println("Some error occured");
+            catch (Exception e) {
+                System.out.println("Some error occured");
+            }
+
+            if(flag){
+                System.out.println("Updated the file successfully!");
+                
+            }
+            else{
+                System.out.println("Updated the file successfully!");
+            }
         }
-        if(flag){
-        	return ("Removed successfully!");
-        	
+        catch(IOException e){
+            System.out.print("Any error while working!!!");
         }
-        else{
-        	return ("Couldn't remove successfully!");
+        
+    }
+
+    public void removeByName(String name){
+
+        try{
+            ArrayList<Student> list = new ArrayList<Student>();
+            boolean flag = false;
+            ObjectInputStream obj = new ObjectInputStream(new FileInputStream("Student.ser"));
+            try {
+                while(true){
+                    Student s = (Student) obj.readObject();
+                    list.add(s);
+                }
+            }
+            catch(SecurityException e){
+                System.out.println("Security");
+            }
+            catch(FileNotFoundException e){
+                System.out.println("File not found");
+            }
+            catch(EOFException e){
+                obj.close();
+                System.out.println("End of file");
+            }
+            catch(IOException e){
+                System.out.println("Io exception");
+            }
+            catch (Exception e) {
+                System.out.println("Some error occured");
+            }
+
+            try {
+                File f = new File("Student.ser");
+                f.delete();
+                for(int i = 0; i<list.size(); i++){
+                    if(name.equals(list.get(i).getName())){
+                        list.remove(i);
+                        System.out.println("iNside loop if");
+                    }else{
+                        writeAFile(list.remove(i));
+                    }
+                }
+            }catch(SecurityException e){
+                System.out.println("Security");
+            }catch (Exception e) {
+                System.out.println("Some error occured");
+            }
+            if(flag){
+               System.out.print("Removed successfully!");
+                
+            }
+            else{
+                System.out.print("Couldn't remove successfully!");
+            }
+        }
+        catch(IOException e){
+            System.out.print("Any random error occured");
         }
     }
 

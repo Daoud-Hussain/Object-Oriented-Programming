@@ -7,7 +7,6 @@ import javax.swing.JOptionPane;
 public class Main{
 	
 	public static void main(String[] args) {
-			// new AddStudent(); 
 
 			JFrame frame = new JFrame();
 			frame.setSize(500,400);
@@ -17,7 +16,6 @@ public class Main{
 			ImageIcon image = new ImageIcon("student1.png");
 			frame.setIconImage(image.getImage());
 
-			// frame.getContentPane().setBackground(new Color(123, 50, 250));
 			JButton button1 = new JButton("Add a Student");
 			button1.setFocusable(false);
 			button1.addActionListener(e -> new AddStudent());
@@ -39,8 +37,6 @@ public class Main{
 			frame.add(button4);
 			frame.add(button5);
 
-
-			// // String name = JOptionPane.showInputDialog("What is your name? ");
 
 			frame.setVisible(true);
 
