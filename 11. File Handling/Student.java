@@ -63,7 +63,7 @@ public class Student extends Person implements Serializable{
 	//Method to display values
 	public String toString(){
 
-		String text = super.toString()+ "\nGPA: "  + gpa + "\nSemester: " + semester + "\nDepartment Name: " + typeDepartment.getName() + "\nLocation: " + typeDepartment.getLocation();
+		String text = super.toString()+ "\nGPA: "  + gpa + "\nSemester: " + semester + "\nDepartment Name: " + typeDepartment.getName() + "\nLocation: " + typeDepartment.getLocation() + "\n\n";
 		return text;
 	}
 
