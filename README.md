@@ -115,7 +115,49 @@ It is also known as **Static polymorphism**. This type of polymorphism is achiev
 
 It is also known as **Dynamic Method Dispatch**. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by **Method Overriding**. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
 
+# ArrayList
+
+The ArrayList class is the part of **Java Collection Framework**. This class implements the List interface provided by the Collection framework. This is a high level hierarchy for the Array list. This is one of the most widely used in Java because it provides flexibility. Java ArrayList is the preferred data structure for everyone who needs dynamic array. You can use the arraylist using following syntax: <br>
+``import java.util.ArrayList;`` <br>
+For primitive types:  <br>
+``ArrayList<listType> listName = new ArrayList<listType>(size);`` <br>
+For class types:  <br>
+``ArrayList<className> listName = new ArrayList<className>(Constructor);`` <br>
+
+## Key points about the ArrayList in Java:
+
+The Java ArrayList grow and sink dynamically when we add/remove elements from it.
+- ArrayList uses the array as an internal data structure to store element.
+- This provides flexibility to use elements using the indexes.
+- ArrayList allows to store duplicate values including “null” values.
+- It is an ordered collection, i.e. it maintains the insertion order.
+- Java ArrayList supports Generics.
+- It only allows objects in the ArrayList. For primitive values like int, long etc. use the wrapper classes.
+- Java ArrayList Iterator and ListIterator implementation is fail-fast.
+- ArrayList is not thread safe. We need to apply synchronization if multiple threads will change ArrayList at the same time.
+
+## Arrays Vs ArrayList
+
+- Array has a **fixed-length** and its size will remain same even if you remove all elements from the Array. While, ArrayList is **dynamic** in nature and it will grow or shrink automatically as we add/ remove element from it.
+- Array is just **data-storage** and you need to write the code to work on the Array (e.g. Add, remove or search etc.) While the ArrayList provides a set of **built-in methods** which make it easy to work with it.
+
+# File Handling
+File Handling enables us to store the output of any particular program in a file and allows us to perform certain operations on it. It is an integral part of any programming language. File handling in Java is defined as reading and writing data to a file.
+
+## Using File Handling in Java
+Their exist particular file class from the java package called **java.io** allows us to handle and work with different formats of files. Thus, if we want to use a file class, we need to create an **object** of that particular class and should specify the filename or directory name.
+
+## Why use File Handling
+Here are some advatages why should we use file handling:
+
+**1. Reusability:** It helps in preserving the data or information generated after running the program. <br>
+**2. Large storage capacity:** Using files, you need not worry about the problem of storing data in bulk. <br>
+**3. Saves time:** Data storage in files required less time consumption. <br>
+**4. Portability:** You can easily transfer the contents of a file from one computer system to another. <br>
+**5. No Data Loss:** Using file handling our data is not lost if we exit the program rather it is stored permanently in files. <br> 
+
 #
+
 
 ### Author
 - <a href="http://daoud-hussain.com/"> Daoud Hussain </a> 
