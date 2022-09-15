@@ -160,7 +160,7 @@ Here are some advatages why should we use file handling:
 
 
 ### Author
-- <a href="http://daoud-hussain.com/"> Daoud Hussain </a> 
+- <a href="https://daoudhussain.tech/"> Daoud Hussain </a> 
 ### References:
 - <a href="https://www.w3schools.com/java/java_intro.asp"> W3Schools</a> 
 - <a href="https://www.geeksforgeeks.org/introduction-to-java/"> Geeks for Geeks </a> 
